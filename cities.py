@@ -6,12 +6,12 @@ import re
 
 # Initialize the Ollama LLM
 llm = Ollama(
-    model="llama3.1:latest",  # Or your preferred model
+    model="llama3.1:latest",
     request_timeout=120.0,
     temperature=0,  # deterministic output
     json_mode=True,  # for structured output
-    num_gpu=999,  # full offload to GPU VRAM if available
-    context_window=2048  # Ensure context window is sufficient
+    num_gpu=999,
+    context_window=2048
 )
 
 # Set the LLM in LlamaIndex settings
